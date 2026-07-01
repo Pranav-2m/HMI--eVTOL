@@ -1,0 +1,31 @@
+# Credentials — never commit these
+.env
+*.json.bak
+
+# Model weights — too large for git
+sar_data/models/
+*.pt
+*.npy
+*.onnx
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Dataset images — too large
+sar_data/raw/
+sar_data/synthetic/
+sar_data/fused/
+sar_data/dataset/
+sar_data/dataset_real/
+sar_data/dataset_thermal/
+
+# Logs
+sar_data/logs/
+runs/
+
+# VS Code
+.vscode/
+
+dataset.yaml
